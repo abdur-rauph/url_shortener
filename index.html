@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ellipsis url shortener</title>
+    <!-- Bootstrap icons-->
+    <link href="./assets/bootstrapIcon/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/fontawesome-free/css/all.min.css">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./assets/css/custom.css" rel="stylesheet" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">Ellipsis Url Shortener</a>
+                <a class="btn btn-primary" href="./admin.php">admin</a>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                            <h1 class="mb-5">Generate a short URL Now!</h1>
+                            <!-- Signup form-->
+                            <form id="shorten">
+                                <div class="input-group input-group-lg">
+                                    <input class="form-control" type="text" placeholder="Enter or paste URL here" aria-label="Enter your email..." aria-describedby="button-submit" name="url" required autocomplete="off" />
+                                    <button class="btn btn-primary" id="button-submit" type="submit">Go</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="shorten-result">
+                    <div class="row justify-content-center mt-2">
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3><b>URL Shortened Successfully</b></h3>
+                                    <hr>
+                                    <div class="w-100 d-flex-responsive align-items-center">
+                                        <div class="w-30" id="result-img"><img src="" class="img-thumbnail rounded w-fluid" style="object-fit: contain;" alt=""></div>
+                                        <div class="w-70 p-2" id="result-info">
+                                            <h4><b id="site-title" class=" truncate-2"></b></h4>
+                                            <hr>
+                                            <small id="site-description" class="truncate"></small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="w-100">
+                                        <p class="m-0">
+                                            <label for=""><b class="text-muted">URL:</b></label>
+                                            <span id="o_url"></span>
+                                        </p>
+                                        <p class="m-0">
+                                            <label for=""><b class="text-muted">Shortened URL:</b></label>
+                                            <span id="shorten_url"></span>
+                                            <span><a href="" id="copy_to_clip" class="shorten_url_link text-muted btn btn-sm btn-default border" target="_blank"><i class="fa fa-clone"></i>  Copy to Clipboard</a></span><br>
+                                            <a href="shorten_url_link" id="navigate" class="shorten_url_link">
+                                                Follow Your Url Here !!!
+                                            </a> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 h-100 text-center my-auto">                        
+                        <p class="text-muted small mb-4 mb-lg-0">ELLIPSIS URL SHORTENER 2022.<br> All Rights Reserved. Developed by <a href="rauphmohamed12@gmail.com" target="_blank">Abdur-rauph Mohammad</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="./assets/js/jquery-3.6.0.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="./assets/js/script.js"></script>
+    </main>
+</body>
+
+</html>
